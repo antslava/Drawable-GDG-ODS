@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseTheme">
+        <attr name="actionBarIconColor" format="color" />
+        <attr name="actionBarInsetStart" format="dimension" />
+        <attr name="spinnerBarInsetStart" format="dimension" />
+        <attr name="popupItemBackground" format="reference" />
+        <attr name="photoItemForeground" format="reference" />
+        <attr name="photoItemForegroundBorderless" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FavoriteView">
+        <!-- name of the attribute that will be used in XML -->
+        <attr name="isFavorite" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FavoriteState">
+        <!-- name of the attribute that will be used in XML files -->
+        <attr name="state_favorite" format="boolean" />
+    </declare-styleable>
+
+
+</resources>

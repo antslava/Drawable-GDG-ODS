@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +16,58 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.activity.GradientDrawableActivity"
+            android:label="GradientDrawable" />
+
+        <activity
+            android:name=".ui.activity.StateListDrawableActivity"
+            android:label="StateListDrawable" />
+
+        <activity
+            android:name=".ui.activity.BitmapDrawableActivity"
+            android:label="BitmapDrawable" />
+
+        <activity
+            android:name=".ui.activity.LayerDrawableActivity"
+            android:label="LayerDrawable" />
+
+        <activity
+            android:name=".ui.activity.RotateDrawableActivity"
+            android:label="RotateDrawble" />
+
+        <activity
+            android:name=".ui.activity.InsetDrawableActivity"
+            android:label="InsetDrawable" />
+
+        <activity
+            android:name=".ui.activity.ClipDrawableActivity"
+            android:label="ClipDrawable" />
+
+        <activity
+            android:name=".ui.activity.ScaleDrawableActivity"
+            android:label="ScaleDrawable" />
+
+        <activity
+            android:name=".ui.activity.RoundedDrawableActivity"
+            android:label="RoundedBitmapDrawable" />
+
+        <activity
+            android:name=".ui.activity.FirstUseCaseActivity"
+            android:label="First Use Case" />
+
+        <activity
+            android:name=".ui.activity.SecondUseCaseActivity"
+            android:label="Second Use Case" />
+
+        <activity
+            android:name=".ui.activity.ThirdUseCaseActivity"
+            android:label="Third Use Case" />
+
+        <activity
+            android:name=".ui.activity.DrawableCustomStateActivity"
+            android:label="Drawable Custom State" />
     </application>
 
 </manifest>

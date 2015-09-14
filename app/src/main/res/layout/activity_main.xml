@@ -1,16 +1,104 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <include layout="@layout/toolbar_actionbar" />
 
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/Activity.Vertical.Padding"
+            android:paddingTop="@dimen/Activity.Vertical.Padding">
+
+            <Button
+                android:id="@+id/gradient_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GradientDrawable" />
+
+            <Button
+                android:id="@+id/state_list_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StateListDrawable" />
+
+            <Button
+                android:id="@+id/bitmap_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BitmapDrawable" />
+
+            <Button
+                android:id="@+id/layer_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LayerDrawable" />
+
+            <Button
+                android:id="@+id/rotate_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RotateDrawable" />
+
+            <Button
+                android:id="@+id/inset_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="InsetDrawable" />
+
+            <Button
+                android:id="@+id/clip_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ClipDrawable" />
+
+            <Button
+                android:id="@+id/scale_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScaleDrawable" />
+
+            <Button
+                android:id="@+id/rounded_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RoundedBitmapDrawable" />
+
+            <Button
+                android:id="@+id/first_use_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Use Case" />
+
+            <Button
+                android:id="@+id/second_use_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Second Use Case" />
+
+            <Button
+                android:id="@+id/third_use_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Third Use Case" />
+
+            <Button
+                android:id="@+id/custom_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Drawable custom state" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

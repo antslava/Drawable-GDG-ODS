@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/ic_twitter" />
+    </item>
+    <item
+        android:left="5dp"
+        android:top="5dp">
+        <bitmap
+            android:src="@drawable/ic_twitter"
+            android:tint="@color/amber_100" />
+    </item>
+    <item
+        android:left="10dp"
+        android:top="10dp">
+        <bitmap
+            android:src="@drawable/ic_twitter"
+            android:tint="@color/cyan_400" />
+    </item>
+</layer-list>

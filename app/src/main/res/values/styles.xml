@@ -1,8 +1,23 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionBarInsetStart">@dimen/Activity.Horizontal.Padding</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#FFF</item>
+        <item name="colorControlNormal">?actionBarIconColor</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">@dimen/TextSize.Material.Large</item>
     </style>
 
 </resources>
