@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/twitter_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:padding="@dimen/Padding.L.Standard" />
+
+        <ImageView
+            android:id="@+id/twitter_selector_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/Margin.L.Standard.Quadruple"
+            android:background="@drawable/tinting_selector"
+            android:clickable="true"
+            android:padding="@dimen/Padding.L.Standard" />
+
+        <ImageView
+            android:id="@+id/twitter_colorfilter"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="@dimen/Margin.L.Standard.Quadruple"
+            android:padding="@dimen/Padding.L.Standard" />
+    </LinearLayout>
+</LinearLayout>

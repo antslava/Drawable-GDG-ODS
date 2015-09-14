@@ -97,6 +97,12 @@
                 android:layout_height="wrap_content"
                 android:text="Drawable custom state" />
 
+            <Button
+                android:id="@+id/tinting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinting" />
+
         </LinearLayout>
 
     </ScrollView>

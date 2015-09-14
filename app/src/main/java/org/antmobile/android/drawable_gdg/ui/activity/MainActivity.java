@@ -90,4 +90,8 @@ public class MainActivity extends ToolbarActivity {
         startActivity(new Intent(this, ThirdUseCaseActivity.class));
     }
 
+    @OnClick(R.id.tinting)
+    void openTintingActivity() {
+        startActivity(new Intent(this, TintingActivity.class));
+    }
 }

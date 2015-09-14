@@ -68,6 +68,10 @@
         <activity
             android:name=".ui.activity.DrawableCustomStateActivity"
             android:label="Drawable Custom State" />
+
+        <activity
+            android:name=".ui.activity.TintingActivity"
+            android:label="Tinting" />
     </application>
 
 </manifest>

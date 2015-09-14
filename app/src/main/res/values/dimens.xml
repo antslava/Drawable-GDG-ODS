@@ -4,13 +4,15 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <dimen name="Margin.L.Standard">8dp</dimen>
-    <dimen name="Margin.L.Standard.Double">16dp</dimen>
     <dimen name="Margin.L.Standard.Half">4dp</dimen>
+    <dimen name="Margin.L.Standard.Double">16dp</dimen>
+    <dimen name="Margin.L.Standard.Quadruple">32dp</dimen>
+
 
     <dimen name="Padding.L.Standard">8dp</dimen>
     <dimen name="Padding.L.Standard.Half">4dp</dimen>
     <dimen name="Padding.L.Standard.Double">16dp</dimen>
-    <dimen name="Padding.L.Standard.Quadruple">16dp</dimen>
+    <dimen name="Padding.L.Standard.Quadruple">32dp</dimen>
 
     <dimen name="TextSize.Material.VeryLarge">18sp</dimen>
     <dimen name="TextSize.Material.Large">16sp</dimen>
@@ -19,8 +21,8 @@
     <dimen name="TextSize.Material.VerySmall">10sp</dimen>
     <dimen name="TextSize.Material.Tiny">8sp</dimen>
 
-    <dimen name="Activity.Horizontal.Padding">@dimen/Padding.L.Standard.Quadruple</dimen>
-    <dimen name="Activity.Vertical.Padding">@dimen/Margin.L.Standard.Double</dimen>
+    <dimen name="Activity.Horizontal.Padding">@dimen/Padding.L.Standard.Double</dimen>
+    <dimen name="Activity.Vertical.Padding">@dimen/Padding.L.Standard.Double</dimen>
 
     <dimen name="Views.Margin">@dimen/Margin.L.Standard.Double</dimen>
 

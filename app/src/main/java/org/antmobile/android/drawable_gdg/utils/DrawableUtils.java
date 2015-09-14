@@ -14,6 +14,7 @@ import android.graphics.drawable.StateListDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.support.annotation.ColorRes;
 import android.support.annotation.DrawableRes;
+import android.support.v4.content.ContextCompat;
 import android.util.TypedValue;
 
 /**
@@ -51,18 +52,15 @@ public final class DrawableUtils {
         ShapeDrawable shapeDrawable;
 
         if (style == Paint.Style.FILL) {
-            final Drawable notTintedDrawable = context.getResources().getDrawable(iconRes, context.getTheme());
+            final Drawable notTintedDrawable = ContextCompat.getDrawable(context, iconRes);
             imageDrawable = tintBitmap(context, notTintedDrawable, color);
         } else {
-            imageDrawable = context.getResources().getDrawable(iconRes, context.getTheme());
+            imageDrawable = ContextCompat.getDrawable(context, iconRes);
         }
 
         shapeDrawable = buildShapeDrawable(context, color, style);
 
-        LayerDrawable layerDrawable = new LayerDrawable(new Drawable[]{
-                shapeDrawable, imageDrawable});
-
-        return layerDrawable;
+        return new LayerDrawable(new Drawable[]{shapeDrawable, imageDrawable});
     }
 
     public static ShapeDrawable buildShapeDrawable(Context context, @ColorRes int color, Paint.Style shapeStyle) {
@@ -70,7 +68,7 @@ public final class DrawableUtils {
 
         final ShapeDrawable shapeDrawable = new ShapeDrawable(new OvalShape());
         final Paint shapePaint = shapeDrawable.getPaint();
-        shapePaint.setColor(context.getResources().getColor(color, context.getTheme()));
+        shapePaint.setColor(ContextCompat.getColor(context, color));
         shapePaint.setStyle(shapeStyle);
         shapePaint.setStrokeWidth(strokeWidth);
 
@@ -80,7 +78,7 @@ public final class DrawableUtils {
     public static BitmapDrawable tintBitmap(Context context, Drawable drawable, @ColorRes int color) {
         final Bitmap oldBitmap = ((BitmapDrawable) drawable).getBitmap();
         final Paint newPaint = new Paint();
-        newPaint.setColorFilter(new PorterDuffColorFilter(context.getResources().getColor(color), PorterDuff.Mode.MULTIPLY));
+        newPaint.setColorFilter(new PorterDuffColorFilter(ContextCompat.getColor(context, color), PorterDuff.Mode.MULTIPLY));
 
         Bitmap newTintendBitmap = Bitmap.createBitmap(oldBitmap.getWidth(),
                 oldBitmap.getHeight(), Bitmap.Config.ARGB_8888);
